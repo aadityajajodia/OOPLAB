@@ -65,12 +65,22 @@ class Pg extends Student
 class Q2
 {
 	public static void main(String[] args) {
-		Ug obj1=new Ug();
+		Scanner adi=new Scanner(System.in);
+		System.out.println("For UG student enter 1 or for PG student enter 2");
+		int opt=adi.nextInt();
+		if(opt==1)
+		{Ug obj1=new Ug();
 
 		obj1.setData();
 		obj1.dis();
-		Pg obj2=new Pg();
+	}else
+	if(opt==2)
+		{
+			Pg obj2=new Pg();
 		obj2.setData();
 		obj2.dis();
 	}
+	else
+	System.out.println("You didn't enter the correct option");
+}
 }
